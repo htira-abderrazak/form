@@ -1,0 +1,291 @@
+/* les balises body et html ont une hauteur et largeur de 100 %, une marge et un padding de 0. */
+body,html{
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+}
+/* Le body a une couleur de fond égale à #F1F4F9.*/
+body{
+	background : #F1F4F9;
+	
+}
+/* Tous les paragraphes ont un alignement justifié*/
+p{
+	text-align:justify;
+	
+}
+/* les balises de titre de type « h5 » sont de couleur #ACC0D7 avec une taille de police de 15px et une marge gauche et supérieure de 15px. */
+h5{
+	color:#ACC0D7;
+	font-size:15px;
+	margin-left:15px;
+    margin-top:15px;	
+	
+}
+/* Les balises
+« strong » auront une taille de police de 15px et la couleur #414A51.*/
+strong {font-size:15px;
+        color:#414A51;
+}
+/* Le header (et le footer) a une couleur de fond de #09C, une hauteur de 12 % et une largeur de 100 %. */
+header,footer{
+	background:#09C;
+	height:12%;
+	width:100%;
+	
+	
+}
+/* un div de classe « logo » avec une marge gauche de 8 %. */
+.logo{
+	margin-left:8%;
+	
+	
+}
+/* Les balises « ul » ont une marge et un padding de 0px sauf pour la marge gauche qui est à
+8 %. */
+ul{	
+	margin-left:100px;
+	
+	margin-top:0;
+	margin-bottom:0;
+	padding:0;
+	}
+	/* Les balises « li » n'ont pas de tiret avant l'élément, une couleur #FFF, une police Comic Sans MS
+de taille 14px et grasse */
+li{
+	list-style-type:none;
+	color:#FFF;
+	font-family: "Comic Sans MS";
+	font-size:14px;
+	font-weight:bold;
+}
+/* Quand on survole chaque « li » la couleur passe à la valeur #2D3E4A.*/
+li:hover{
+	color:#2D3E4A;
+	
+}
+/* Ce point aura une police de taille 20px, une couleur #237DAC et une marge de 15px. */
+li:after{
+	content:".";
+	font-size:20px;
+	color:#237DAC;
+	margin:15px;
+}
+
+/* La classe « icone » a une marge gauche de 7%. */
+.icone{
+		margin-left:12%;
+}
+	
+
+/* Les classes « logo », « icone » ainsi que les balises « nav », « ul » et « li » sont positionnées comme
+des boites à la fois inline et block et on un alignement verticale basé sur le milieu par rapport à leur
+parent. */
+.logo,.icone,nav,ul,li{
+	display:inline-block;
+	vertical-align:middle;
+}
+/* Elle est positionnée en absolue sur une distance de 5 % par rapport à la droite de la page, une largeur
+de 24 %, une marge supérieur de 20px et une largeur-max de 328px.*/
+aside{
+	position:absolute;
+	right:5%;
+	width:24%;
+	margin-top:20px;
+	max-width:328px;
+}
+/* Chaque bulle a une couleur de fond #FFF, une bordure de couleur
+#F1F4F9 de 1px sur un style solid et une couleur de police #414A51. Un bord arrondi à 10px, un
+padding droit de 20px, un padding bas de 20px et une marge basse de 30px. */
+.bulle{
+	background: #FFF;
+	border:#F1F4F9 1px solid;
+	color: #414A51;
+	border-radius:10px;
+	padding-right:20px;
+	padding-bottom:20px;
+	margin-bottom:30px;
+}
+/* le titre de l'article via une balise « h5 » de couleur #ACC0D7, de taille de police 15px, de marge
+gauche et droite de 15px. */
+h5{
+	color:#ACC0D7;
+	font-size:15px;
+	margin-right:15px;
+	margin-left:15px;
+		}
+		
+/* un « div » de classe « image » contenant une balise d'image qui contient l'image de la bulle (la clé
+usb, le mac, etc). La classe image est un flottant a gauche avec une marge de 10px. Ceci permettra au
+texte de la bulle d'entourer l'image à droite. */		
+.image{
+	float:left;
+	margin:10px;
+	}
+	
+/* Ce rectangle n'est rien d'autre qu'un « div » de classe
+« centrale » avec une couleur de fond #FFF, une marge gauche de 8 %, un padding haut de 3 % et une
+largeur de 60 % */	
+.centrale{
+	background:#FFF;
+	margin-left:8%;
+	padding-top:3%;
+	width:60%;
+	
+}	
+
+/*  La balise « form » aura une marge automatique et une largeur de 75 %. */
+form{
+	margin:auto;
+	width:75%;
+}
+/* Chaque « fieldset » a une couleur de fond
+rgb(247,247,247), une bordure arrondie de 5px, une marge
+inférieure de 10px, une bordure de couleur #CCC, de taille
+1px, de style « solid ». */
+fieldset{
+	background:rgb(247,247,247);
+	border-radius:5px;
+	margin-bottom:10px;
+	border:#CCC  1px solid;
+}
+/* Affectez au survol de la balise <fieldset> un box-shadow :
+0pt 2px 5px rgba(105, 108, 109, 0.7), 0px 0px 8px 5px
+rgba(208, 223, 226, 0.4) inset. Ce qui permettra d'avoir un
+effet 3D à chaque survol. */
+fieldset:hover{
+	box-shadow : 0pt 2px 5px rgba(105,108,109,0.7), 0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	
+}
+/* Affectez à la balise <legend> de la balise <fieldset> un
+padding 0px 10px, une couleur de police #237DAC et des
+bordures droites et gauches de #CCC 1px solid. */
+legend{
+	padding: 0px 10px;
+	border-right:#CCC 1px solid;
+	border-left:#CCC 1px solid;
+	color:#237DAC;
+	
+	}
+
+/* Affectez à la balise « label » un fond de couleur #09C, une
+couleur de police #FFF, un affichage en block (au lieu de
+inline), une largeur de 39 %, un flottement à gauche, un
+padding droit, bas et haut de 1 %, une marge gauche de
+4 %, un alignement de texte à droite et un espace inter lettre
+de 1px. */	
+label{
+	background: #09C;
+	color:#FFF;
+	display:block;
+	width:39%;
+	float:left;
+	padding-right:1%;
+	padding-top:1%;
+	padding-bottom:1%;
+	margin-left:4%;
+	text-align:right;
+	letter-spacing:1px;
+}
+
+/* Affectez à l'aide de :not à tous les « label » qui ont une
+classe différente de « pas_de_style » un bord arrondi de
+3px. On affecte également cette valeur à toutes les balises
+« input ».*/
+label:not(.pas_de_style), input{
+	border-radius:3px;
+	
+}
+/* Affectez au survol d'un label une épaisseur de police de
+type « bold ». */
+label:hover{
+	font-weight:bold;
+	
+}
+
+/* Affectez à toute balise de classe « pas_de_style » un
+background:none qui aura pour effet d'enlever toute
+propriété d'arrière fond au label qui précède les boutons afin
+que ce dernier soit invisible.*/
+.pas_de_style{
+	background:none;
+	
+}
+
+/* Affectez à tous les input et select une couleur de police #414A51, un padding supérieur, gauche et bas
+de 1 %, une police de taille 14px, une marge gauche de 1 %, une largeur de 48 %, une bordure #CCC
+1px solid et une transition de type all 0.25s linear.  */
+
+input,select{
+	color:#414A51;
+	padding-top:1%;
+	padding-left:1%;
+	padding-bottom:1%;
+	font-size:14px;
+	margin-left:1%;
+	width:48%;
+	border: #CCC 1px solid;
+	transition : all 0.25s linear;
+}
+
+/* Affectez au focus d'un input et d'un select une largeur de 39 % (ça fera réduire le input car initialement
+il est à 48 %) ainsi qu'un box-shadow: 0 0 5px #6495ED; */
+
+input:focus,select:focus{
+	width:39%;
+	box-shadow:0 0 5px #6495ED;
+}
+
+/* Affectez aux input de type submit, button et reset une largeur de 23%, une couleur de fond #09C, une
+couleur de police #FFF, un espace inter lettres de 1px, un bord arrondi à 1px, une transition: all 0.2s
+linear, une marge basse de 20px et une bordure de couleur #DDEEFF, de taille 1px et de type solid.*/ 
+
+  input[type="submit"],  input[type="button"],  input[type="reset"]{
+	border: #DDEEFF 1px solid;
+	width: 23%;
+	background-color: #09C;
+	color:#FFF;
+	letter-spacing: 1px;
+	border-radius: 1px;
+	transition: all 0.2s linear;
+	margin-bottom:20px;
+}
+
+/* Affectez au survol des input de type « submit », « button » et « reset » une couleur de fond #87CEFA,
+une couleur de police #414A51 et un box-shadow: 0 0 5px #6495ED;*/
+
+input[type="submit"]:hover,input[type="reset"]:hover,input[type="button"]:hover{
+	background:#87CEFA;
+	color:#414A51;
+	box-shadow:0 0 5px #6495ED;
+}
+
+/* Pour cela on supprime d'abord les flèches pour les champs de type « number » via
+input[type="number"] { -moz-appearance: textfield;} */
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* puis on affecte aux input qui ne sont pas de type
+submit et qui sont invalides un box-shadow: 0 0 5px #6495ED; l'image de fond rouge3.png
+positionnée à droite horizontalement et au milieu verticalement ainsi qu'un blocage de la répétition de
+l'image pour qu'elle n'apparaisse qu'une seule fois.*/
+input:not([type="submit"]):invalid{
+   box-shadow: 0 0 5px #6495ED;
+	background : url(rouge3.png) right center no-repeat;
+  }
+
+/* On fait le même style pour les input qui ne sont pas
+de type submit et qui sont valides sauf qu'on met l'image vert3.png au lieu de rouge3.png */  
+  
+  input:not([type="submit"]):valid{
+      background: url(vert3.png) right center no-repeat;
+    }
+
+/* Le footer a
+exactement le même style que le header sauf qu'il a en plus une marge supérieure de 5%.*/
+	footer{margin-top:5%; }
+	
+	.resolution_inf_766{display:none;}
